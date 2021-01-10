@@ -1,0 +1,48 @@
+{
+  "name": "@cigalecigales/daft",
+  "description": "JavaScript Library Sample Project.",
+  "version": "1.0.0",
+  "author": "cigalecigales",
+  "main": "dist/daft.cmj.js",
+  "module": "dist/daft.es.js",
+  "browser": "dist/daft.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cigalecigales/daft.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "jest"
+  },
+  "keywords": [
+    "date",
+    "formatter"
+  ],
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.json"
+      }
+    },
+    "testMatch": [
+      "**/test/**/*.test.ts"
+    ]
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.1.0",
+    "jest": "^26.6.3",
+    "rollup": "^2.36.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "ts-jest": "^26.4.4",
+    "tslib": "^2.1.0",
+    "typescript": "^4.1.3"
+  }
+}
