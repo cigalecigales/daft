@@ -3,7 +3,7 @@
   "description": "JavaScript Library Sample Project.",
   "version": "1.0.0",
   "author": "cigalecigales",
-  "main": "dist/daft.cmj.js",
+  "main": "dist/daft.cjs.js",
   "module": "dist/daft.es.js",
   "browser": "dist/daft.js",
   "repository": {
@@ -37,6 +37,11 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@rollup/plugin-babel": "^5.2.2",
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.1",
     "@rollup/plugin-typescript": "^8.1.0",
     "jest": "^26.6.3",
     "rollup": "^2.36.1",
